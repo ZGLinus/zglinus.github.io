@@ -1,0 +1,45 @@
+Unable to start activity ComponentInfo{me.liujia95.solitude/me.liujia95.solitude.feature.tools.nfc.NFCActivity}: java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+
+Unable to start activity ComponentInfo{me.liujia95.solitude/me.liujia95.solitude.feature.tools.nfc.NFCActivity}: java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+
+java.lang.RuntimeException: Unable to start activity ComponentInfo{me.liujia95.solitude/me.liujia95.solitude.feature.tools.nfc.NFCActivity}: java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3411)
+	at android.app.ActivityThread.-wrap12(Unknown Source:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1994)
+	at android.os.Handler.dispatchMessage(Handler.java:108)
+	at android.os.Looper.loop(Looper.java:166)
+	at android.app.ActivityThread.main(ActivityThread.java:7529)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:245)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:921)
+Caused by: java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+	at android.app.Activity.onCreate(Activity.java:1081)
+	at e.j.b.g.onCreate(Unknown Source:0)
+	at androidx.activity.ComponentActivity.onCreate(:2)
+	at androidx.fragment.app.FragmentActivity.onCreate(Unknown Source:0)
+	at e.b.c.g.onCreate(Unknown Source:10)
+	at f.l.a.g.b.onCreate(Unknown Source:3)
+	at android.app.Activity.performCreate(Activity.java:7383)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1218)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3256)
+	... 9 more
+java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+	at android.app.Activity.onCreate(Activity.java:1081)
+	at e.j.b.g.onCreate(Unknown Source:0)
+	at androidx.activity.ComponentActivity.onCreate(:2)
+	at androidx.fragment.app.FragmentActivity.onCreate(Unknown Source:0)
+	at e.b.c.g.onCreate(Unknown Source:10)
+	at f.l.a.g.b.onCreate(Unknown Source:3)
+	at android.app.Activity.performCreate(Activity.java:7383)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1218)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3256)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3411)
+	at android.app.ActivityThread.-wrap12(Unknown Source:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1994)
+	at android.os.Handler.dispatchMessage(Handler.java:108)
+	at android.os.Looper.loop(Looper.java:166)
+	at android.app.ActivityThread.main(ActivityThread.java:7529)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:245)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:921)
