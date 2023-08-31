@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>点击复制文本</title>
+    <script>
+        function copyText(text) {
+            // 创建一个文本输入框
+            var input = document.createElement("input");
+            input.style.opacity = "0";
+            input.style.position = "absolute";
+            input.value = text;
+
+            // 将文本输入框添加到页面中
+            document.body.appendChild(input);
+
+            // 选择文本
+            input.select();
+            input.setSelectionRange(0, 99999); // 兼容移动端
+
+            // 复制文本到剪贴板
+            document.execCommand("copy");
+
+            // 移除文本输入框
+            document.body.removeChild(input);
+            
+            /* 提示用户已复制 */
+            alert("已复制文本：" + text);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="copyText('exec ./bot.sh &quot;fan 4&quot;')">fan 4</button>
+    <button onclick="copyText('exec ./bot.sh &quot;fan auto&quot;')">fan auto</button>
+    <button onclick="copyText('exec ./bot.sh &quot;fan 4&quot;')">coming soon</button>
+    <!-- 可以继续添加更多的按钮 -->
+</body>
+</html>
